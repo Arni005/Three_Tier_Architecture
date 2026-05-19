@@ -1,1 +1,85 @@
-# Three_Tier_Architecture
+# Terraform 3-Tier Architecture Project
+
+## Overview
+This project demonstrates a basic **3-tier architecture** infrastructure setup using Terraform on AWS. It is designed as a learning project to understand Infrastructure as Code (IaC) concepts and how cloud resources are provisioned and connected.
+
+The architecture includes:
+- Web Tier
+- Application Tier
+- Database Tier
+
+---
+
+## Architecture
+
+- **Web Tier**
+  - EC2 instance running Apache HTTP Server
+  - Exposed to the internet via public subnet
+
+- **App Tier**
+  - EC2 instance in a private subnet
+  - Handles backend logic (placeholder setup for learning)
+
+- **Database Tier**
+  - Amazon RDS MySQL instance (or EC2-based DB if configured)
+  - Hosted in a private subnet for security
+
+- **Networking**
+  - Custom VPC
+  - Public and private subnets
+  - Internet Gateway
+  - NAT Gateway for private subnet internet access
+
+---
+
+## Technologies Used
+
+- Terraform
+- AWS (EC2, VPC, Subnets, RDS, NAT Gateway)
+- Apache HTTP Server
+- Ubuntu
+
+---
+
+## Project Structure
+
+
+---
+
+## How It Works
+
+1. Terraform creates the AWS infrastructure:
+   - VPC
+   - Subnets (public & private)
+   - Route tables
+   - NAT Gateway
+   - EC2 instances
+   - RDS database
+
+2. User data script installs and configures Apache on the Web Tier EC2.
+
+3. The Web Tier serves a simple HTML page to confirm deployment.
+
+---
+
+## User Data Script
+
+The web server is configured using `userdata.sh`:
+
+- Installs Apache HTTP Server
+- Starts and enables the service
+- Creates a default `index.html` page
+
+---
+
+## Project Structure
+
+
+---
+
+## How to Deploy
+
+```bash
+terraform init
+terraform plan
+terraform apply
