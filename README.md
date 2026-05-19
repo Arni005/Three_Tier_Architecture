@@ -42,7 +42,7 @@ The architecture includes:
 ---
 
 ## Project Structure
-
+'''
 project/
 ├── variables.tf
 ├── provider.tf
@@ -54,7 +54,7 @@ project/
 ├── database.tf
 ├── terraform.tfvars
 └── userdata.sh
-
+'''
 ---
 
 ## How It Works
