@@ -70,7 +70,9 @@ The web server is configured using `userdata.sh`:
 ## Architecture Diagram
 
 ![Demo](assets/demo.gif)
-
+<video width="600" controls>
+  <source src="assets/WhatsApp Video 2026-05-18 at 3.49.09 PM.mp4" type="video/mp4">
+</video>
 ---
 
 ## How to Deploy
