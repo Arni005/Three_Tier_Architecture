@@ -43,6 +43,17 @@ The architecture includes:
 
 ## Project Structure
 
+project/
+├── variables.tf
+├── provider.tf
+├── vpc.tf
+├── subnets.tf
+├── routing.tf
+├── security_groups.tf
+├── compute.tf
+├── database.tf
+├── terraform.tfvars
+└── userdata.sh
 
 ---
 
@@ -72,8 +83,9 @@ The web server is configured using `userdata.sh`:
 
 ---
 
-## Project Structure
+## Architecture Diagram
 
+![Demo](assets/demo.gif)
 
 ---
 
@@ -82,4 +94,22 @@ The web server is configured using `userdata.sh`:
 ```bash
 terraform init
 terraform plan
-terraform apply
+terraform apply 
+```
+To destroy the infrastructure:
+
+```bash
+terraform destroy
+```
+
+---
+
+## Learning Outcome
+
+This project helps understand:
+
+- Infrastructure as Code (IaC)
+- AWS networking (VPC, subnets, routing)
+- Multi-tier architecture design
+- EC2 and RDS provisioning
+- Basic automation using Terraform
