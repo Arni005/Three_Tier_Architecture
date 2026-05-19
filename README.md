@@ -41,22 +41,6 @@ The architecture includes:
 
 ---
 
-## Project Structure
-'''
-project/
-├── variables.tf
-├── provider.tf
-├── vpc.tf
-├── subnets.tf
-├── routing.tf
-├── security_groups.tf
-├── compute.tf
-├── database.tf
-├── terraform.tfvars
-└── userdata.sh
-'''
----
-
 ## How It Works
 
 1. Terraform creates the AWS infrastructure:
